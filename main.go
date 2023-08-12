@@ -43,6 +43,7 @@ func main() {
 
 	// check the status code
 	if healthStatus != 200 {
+		log.Fatal("Health check response: ", healthResp)
 		log.Fatal("Health check failed with status: ", healthStatus)
 	}
 
